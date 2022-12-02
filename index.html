@@ -1,15 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>猫照片应用</title>
 </head>
 
 <body>
-    <div>hello world</div>
+    <h1>猫照片应用</h1>
+    <main>
+        <section>
+            <h2>猫照片</h2>
+            <!-- TODO: 添加猫照片链接 -->
+            <p>点击此处显示更多 <a target="_blank" href="https://www.icoderoad.com">猫照片</a>.</p>
+            <a href="https://www.icoderoad.com"><img
+                    src="https://assets.icoderoad.com/course/cat-photo-app/relaxing-cat.jpg" alt="一只可爱的橙色猫躺在它的背上"></a>
+        </section>
+        <section>
+            <h2>猫列表</h2>
+            <h3>猫喜欢的东西：</h3>
+            <ul>
+                <li>猫草</li>
+                <li>激光笔</li>
+                <li>烤宽面条</li>
+            </ul>
+            <figure>
+                <img src="https://assets.icoderoad.com/course/cat-photo-app/lasagna.jpg" alt="盘子上的一片烤宽面条">
+                <figcaption>猫<em>喜欢</em>烤宽面条。</figcaption>
+            </figure>
+            <h3>猫最讨厌的三件事：</h3>
+            <ol>
+                <li>跳蚤治疗</li>
+                <li>打雷</li>
+                <li>其他猫</li>
+            </ol>
+            <figure>
+                <img src="https://assets.icoderoad.com/course/cat-photo-app/cats.jpg" alt="五只猫环顾四周">
+                <figcaption>猫讨厌其他猫</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>猫表单</h2>
+            <form action="https://www.icoderoad.com/submit-cat-photo.html">
+                <fieldset>
+                    <legend>您的猫是室内猫还是室外猫？</legend>
+                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> 室内</label>
+                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> 户外</label>
+                </fieldset>
+                <fieldset>
+                    <legend>您的猫是什么性格？</legend>
+                    <input id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">
+                        喜爱美食</label>
+                    <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy"> 懒惰</label>
+                    <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">
+                        精力充沛</label>
+                </fieldset>
+                <input type="text" name="catphotourl" placeholder="猫照片网址" required>
+                <button>提交</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            技术支持 - <a href="https://www.icoderoad.com">icoderoad.com</a>
+        </p>
+    </footer>
 </body>
 
 </html>
